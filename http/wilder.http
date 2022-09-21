@@ -1,0 +1,41 @@
+POST http://localhost:5000/api/wilders
+Content-Type: application/json
+
+{
+    "name": "Janne3",
+    "city":"Nice"
+}
+
+
+###
+
+GET http://localhost:5000/api/wilders
+
+###
+
+DELETE http://localhost:5000/api/wilders
+Content-Type: application/json
+
+{
+    "idToDelete": 4
+}
+
+###
+
+PUT http://localhost:5000/api/wilders
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "new name"
+}
+
+###
+
+POST http://localhost:5000/api/wilders/addSkill
+Content-Type: application/json
+
+{
+    "wilderName": "new name",
+    "skillName": "Javascript"
+}
